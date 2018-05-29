@@ -1,0 +1,346 @@
+﻿<Window x:Class="PuzzleGame.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PuzzleGame"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="708.971" Width="512.861">
+    <Grid Margin="0,0,0,76">
+
+        <Canvas Margin="331,29,173,925">
+            <Grid Height="49" Width="39">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="2*"/>
+                    <ColumnDefinition Width="2*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="2*"/>
+                    <RowDefinition Height="2*"/>
+                </Grid.RowDefinitions>
+                <Ellipse x:Name="ellipse1" Grid.Row="0" Grid.Column="0" Fill="Black" />
+                <Ellipse x:Name="ellipse2" Grid.Row="0" Grid.Column="1" Fill="Black"/>
+                <Ellipse x:Name="ellipse3" Grid.Row="1" Grid.Column="0" Fill="Black"/>
+                <Ellipse x:Name="ellipse4" Grid.Row="1" Grid.Column="1" Fill="Black"/>
+            </Grid>
+        </Canvas>
+        <Canvas Margin="331,131,173,821" RenderTransformOrigin="0.581,1.449">
+            <Grid Height="48" Width="39" Canvas.Top="-13">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="2*"/>
+                    <ColumnDefinition Width="2*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="2*"/>
+                    <RowDefinition Height="2*"/>
+                </Grid.RowDefinitions>
+                <Ellipse x:Name="ellipse5" Grid.Row="0" Grid.Column="0" Fill="Black" />
+                <Ellipse x:Name="ellipse6" Grid.Row="0" Grid.Column="1" Fill="Black"/>
+                <Ellipse x:Name="ellipse7" Grid.Row="1" Grid.Column="0" Fill="Black"/>
+                <Ellipse x:Name="ellipse8" Grid.Row="1" Grid.Column="1" Fill="Black"/>
+            </Grid>
+        </Canvas>
+        <Canvas Margin="331,209,173,545">
+            <Grid Height="49" Width="39">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="2*"/>
+                    <ColumnDefinition Width="2*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="2*"/>
+                    <RowDefinition Height="2*"/>
+                </Grid.RowDefinitions>
+                <Ellipse x:Name="ellipse9" Grid.Row="0" Grid.Column="0" Fill="Black" />
+                <Ellipse x:Name="ellipse10" Grid.Row="0" Grid.Column="1" Fill="Black"/>
+                <Ellipse x:Name="ellipse11" Grid.Row="1" Grid.Column="0" Fill="Black"/>
+                <Ellipse x:Name="ellipse12" Grid.Row="1" Grid.Column="1" Fill="Black"/>
+            </Grid>
+        </Canvas>
+        <Canvas Margin="332,332,173,622">
+            <Grid Height="49" Width="39" Canvas.Top="-26">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="2*"/>
+                    <ColumnDefinition Width="2*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="2*"/>
+                    <RowDefinition Height="2*"/>
+                </Grid.RowDefinitions>
+                <Ellipse x:Name="ellipse13" Grid.Row="0" Grid.Column="0" Fill="Black" />
+                <Ellipse x:Name="ellipse14" Grid.Row="0" Grid.Column="1" Fill="Black"/>
+                <Ellipse x:Name="ellipse15" Grid.Row="1" Grid.Column="0" Fill="Black"/>
+                <Ellipse x:Name="ellipse16" Grid.Row="1" Grid.Column="1" Fill="Black"/>
+            </Grid>
+        </Canvas>
+        <Canvas Margin="332,441,173,510">
+            <Grid Height="49" Width="39" Canvas.Top="-38">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="2*"/>
+                    <ColumnDefinition Width="2*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="2*"/>
+                    <RowDefinition Height="2*"/>
+                </Grid.RowDefinitions>
+                <Ellipse x:Name="ellipse17" Grid.Row="0" Grid.Column="0" Fill="Black" />
+                <Ellipse x:Name="ellipse18" Grid.Row="0" Grid.Column="1" Fill="Black"/>
+                <Ellipse x:Name="ellipse19" Grid.Row="1" Grid.Column="0" Fill="Black"/>
+                <Ellipse x:Name="ellipse20" Grid.Row="1" Grid.Column="1" Fill="Black"/>
+            </Grid>
+        </Canvas>
+        <Canvas Name="Sign1" Margin="10,10,472,908">
+            <Border BorderThickness="1"  CornerRadius="5" Background="Crimson" Height="80" Width="66">
+                <Image Name="Sign1Image">
+
+                </Image>
+            </Border>
+        </Canvas>
+
+        <Canvas Name="Sign2" Margin="88,10,393,908">
+            <Border BorderThickness="1"  CornerRadius="5" Background="Crimson" Height="80" Width="66">
+                <Image Name="Sign2Image">
+
+                </Image>
+            </Border>
+        </Canvas>
+
+        <Canvas Name="Sign4" Margin="251,10,221,908">
+            <Border BorderThickness="1"  CornerRadius="5" Background="Crimson" Height="80" Width="66">
+                <Image Name="Sign4Image">
+
+                </Image>
+            </Border>
+        </Canvas>
+
+        <Canvas Name="Sign3" Margin="170,10,302,908">
+            <Border BorderThickness="1"  CornerRadius="5" Background="Crimson" Height="80" Width="66">
+                <Image Name="Sign3Image">
+
+                </Image>
+            </Border>
+        </Canvas>
+
+        <Canvas Name="Sign5" Margin="10,111,472,800">
+            <Border BorderThickness="1"  CornerRadius="5" Background="Crimson" Height="80" Width="66" Canvas.Top="-11">
+                <Image Name="Sign5Image">
+
+                </Image>
+            </Border>
+        </Canvas>
+
+        <Canvas Name="Sign6" Margin="88,111,393,810">
+            <Border BorderThickness="1"  CornerRadius="5" Background="Crimson" Height="80" Width="66" Canvas.Top="-11">
+                <Image Name="Sign6Image">
+
+                </Image>
+            </Border>
+        </Canvas>
+
+        <Canvas Name="Sign7" Margin="170,111,302,800">
+            <Border BorderThickness="1"  CornerRadius="5" Background="Crimson" Height="80" Width="66" Canvas.Top="-11">
+                <Image Name="Sign7Image">
+
+                </Image>
+            </Border>
+        </Canvas>
+
+        <Canvas Name="Sign8" Margin="251,111,221,800">
+            <Border BorderThickness="1"  CornerRadius="5" Background="Crimson" Height="80" Width="66" Canvas.Top="-11">
+                <Image Name="Sign8Image">
+
+                </Image>
+            </Border>
+        </Canvas>
+
+        <Canvas Name="Sign9" Margin="10,208,462,708">
+            <Border BorderThickness="1"  CornerRadius="5" Background="Crimson" Height="80" Width="66" Canvas.Top="-16">
+                <Image Name="Sign9Image">
+
+                </Image>
+            </Border>
+        </Canvas>
+
+        <Canvas Name="Sign10" Margin="88,208,384,708">
+            <Border BorderThickness="1"  CornerRadius="5" Background="Crimson" Height="80" Width="66" Canvas.Top="-16">
+                <Image Name="Sign10Image">
+
+                </Image>
+            </Border>
+        </Canvas>
+
+        <Canvas Name="Sign11" Margin="170,208,302,708">
+            <Border BorderThickness="1"  CornerRadius="5" Background="Crimson" Height="80" Width="66" Canvas.Top="-16">
+                <Image Name="Sign11Image">
+
+                </Image>
+            </Border>
+        </Canvas>
+
+        <Canvas Name="Sign12" Margin="251,208,221,708">
+            <Border BorderThickness="1"  CornerRadius="5" Background="Crimson" Height="80" Width="66" Canvas.Top="-16">
+                <Image Name="Sign12Image">
+
+                </Image>
+            </Border>
+        </Canvas>
+
+        <Canvas Name="Sign13" Margin="10,312,462,604">
+            <Border BorderThickness="1"  CornerRadius="5" Background="Crimson" Height="80" Width="66" Canvas.Top="-24">
+                <Image Name="Sign13Image">
+
+                </Image>
+            </Border>
+        </Canvas>
+
+        <Canvas Name="Sign14" Margin="88,312,384,604">
+            <Border BorderThickness="1"  CornerRadius="5" Background="Crimson" Height="80" Width="66" Canvas.Top="-24">
+                <Image Name="Sign14Image">
+
+                </Image>
+            </Border>
+        </Canvas>
+
+        <Canvas Name="Sign15" Margin="170,312,302,604">
+            <Border BorderThickness="1"  CornerRadius="5" Background="Crimson" Height="80" Width="66" Canvas.Top="-24">
+                <Image Name="Sign15Image">
+
+                </Image>
+            </Border>
+        </Canvas>
+
+        <Canvas Name="Sign16" Margin="251,312,221,604">
+            <Border BorderThickness="1"  CornerRadius="5" Background="Crimson" Height="80" Width="66" Canvas.Top="-24">
+                <Image Name="Sign16Image">
+
+                </Image>
+            </Border>
+        </Canvas>
+
+        <Canvas Name="Sign17" Margin="10,422,462,494">
+            <Border BorderThickness="1"  CornerRadius="5" Background="Crimson" Height="80" Width="66" Canvas.Top="-38">
+                <Image Name="Sign17Image">
+
+                </Image>
+            </Border>
+        </Canvas>
+
+
+        <Canvas Name="Sign18" Margin="88,422,384,494">
+            <Border BorderThickness="1"  CornerRadius="5" Background="Crimson" Height="80" Width="66" Canvas.Top="-38">
+                <Image Name="Sign18Image">
+
+                </Image>
+            </Border>
+        </Canvas>
+
+
+        <Canvas Name="Sign19" Margin="170,422,302,494">
+            <Border BorderThickness="1"  CornerRadius="5" Background="Crimson" Height="80" Width="66" Canvas.Top="-38">
+                <Image Name="Sign19Image">
+
+                </Image>
+            </Border>
+        </Canvas>
+
+        <Canvas Name="Sign20" Margin="251,422,221,494">
+            <Border BorderThickness="1"  CornerRadius="5" Background="Crimson" Height="80" Width="66" Canvas.Top="-38">
+                <Image Name="Sign20Image">
+
+                </Image>
+            </Border>
+        </Canvas>
+
+
+        <Canvas Name="Sign21" Margin="10,481,462,273">
+            <Border BorderThickness="1"  CornerRadius="5" Background="Crimson" Height="80" Width="66">
+                <Image Name="Sign21Image">
+
+                </Image>
+            </Border>
+        </Canvas>
+
+
+        <Canvas Name="Sign23" Margin="170,481,302,273">
+            <Border BorderThickness="1"  CornerRadius="5" Background="Crimson" Height="80" Width="66">
+                <Image Name="Sign23Image">
+
+                </Image>
+            </Border>
+        </Canvas>
+
+        <Canvas Name="Sign22" Margin="88,481,384,273">
+            <Border BorderThickness="1"  CornerRadius="5" Background="Crimson" Height="80" Width="66">
+                <Image Name="Sign22Image">
+
+                </Image>
+            </Border>
+        </Canvas>
+
+        <Canvas Name="Sign24" Margin="251,481,221,273">
+            <Border BorderThickness="1"  CornerRadius="5" Background="Crimson" Height="80" Width="66">
+                <Image Name="Sign24Image">
+
+                </Image>
+            </Border>
+        </Canvas>
+
+
+        <Canvas Name="SignPicker1" Margin="10,596,462,158">
+            <Border BorderThickness="1"  CornerRadius="5" Background="Crimson" Height="80" Width="66" Canvas.Top="-21">
+                <Image Name="SignPicker1Image" MouseDown="SignPicker1Image_MouseDown">
+
+                </Image>
+            </Border>
+        </Canvas>
+
+        <Canvas Name="SignPicker2" Margin="88,596,384,158">
+            <Border BorderThickness="1"  CornerRadius="5" Background="Crimson" Height="80" Width="66" Canvas.Top="-21">
+                <Image Name="SignPicker2Image" MouseDown="SignPicker2Image_MouseDown">
+
+                </Image>
+            </Border>
+        </Canvas>
+
+        <Canvas Name="SignPicker3" Margin="170,596,302,158">
+            <Border BorderThickness="1"  CornerRadius="5" Background="Crimson" Height="80" Width="66" Canvas.Top="-21">
+                <Image Name="SignPicker3Image" MouseDown="SignPicker3Image_MouseDown">
+
+                </Image>
+            </Border>
+        </Canvas>
+
+        <Canvas Name="SignPicker4" Margin="251,596,221,158">
+            <Border BorderThickness="1"  CornerRadius="5" Background="Crimson" Height="80" Width="66" Canvas.Top="-21">
+                <Image Name="SignPicker4Image" MouseDown="SignPicker4Image_MouseDown">
+
+                </Image>
+            </Border>
+        </Canvas>
+
+        <Canvas Name="SignPicker5" Margin="332,596,140,158">
+            <Border BorderThickness="1"  CornerRadius="5" Background="Crimson" Height="80" Width="66" Canvas.Top="-21">
+                <Image Name="SignPicker5Image" MouseDown="SignPicker5Image_MouseDown">
+
+                </Image>
+            </Border>
+        </Canvas>
+        <Canvas Name="SignPicker6" Margin="410,596,62,158">
+            <Border BorderThickness="1"  CornerRadius="5" Background="Crimson" Height="80" Width="66" Canvas.Top="-21">
+                <Image Name="SignPicker6Image" MouseDown="SignPicker6Image_MouseDown">
+
+                </Image>
+            </Border>
+        </Canvas>
+
+
+        <Canvas Margin="410,29,20,573">
+            <ProgressBar Name="ProgressBar1" Value="0" Height="300" Width="30" />
+
+        </Canvas>
+
+
+
+
+
+    </Grid>
+</Window>
